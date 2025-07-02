@@ -1,0 +1,155 @@
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #003566;
+    color: white;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* Container and Fonts */
+.navbar-container {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #1f2e4d;
+  color: #fff;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.top-bar .top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar a {
+  color: #00aced;
+  text-decoration: none;
+}
+
+.language-select {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Main Nav */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2e5eaa;
+}
+
+.logo-subtext {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -5px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a,
+.navbar-links span {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.navbar-links a:hover,
+.navbar-links span:hover {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Search Icon */
+.search-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.username {
+  color: #00aced;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}

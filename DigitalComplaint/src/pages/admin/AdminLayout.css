@@ -1,0 +1,22 @@
+
+   .admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+  }
+  
+  .admin-sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #003566, #00509d);
+    color: white;
+    padding: 1.5rem;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .admin-content {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  

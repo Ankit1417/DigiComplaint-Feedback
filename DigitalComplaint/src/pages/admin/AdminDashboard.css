@@ -1,0 +1,21 @@
+.admin-dashboard {
+    padding: 1.5rem;
+  }
+  
+  .stats-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .stat-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    background-color: #f2f4f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+  }
+  

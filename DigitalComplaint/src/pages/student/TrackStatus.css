@@ -1,0 +1,272 @@
+/* TrackStatus.css */
+.track-status-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.search-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.search-section h2 {
+  color: #2d3436;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.form-group {
+  position: relative;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e3e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.1);
+}
+
+.error-input {
+  border-color: #ff4757 !important;
+  animation: shake 0.4s ease;
+}
+
+.error-message {
+  display: block;
+  color: #ff4757;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.search-button, .clear-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button {
+  background: #4dabf7;
+  color: white;
+}
+
+.clear-button {
+  background: #f8f9fa;
+  color: #4a4a4a;
+  border: 2px solid #e0e3e6;
+}
+
+.search-button:hover {
+  background: #339af0;
+  transform: translateY(-1px);
+}
+
+.clear-button:hover {
+  background: #f1f3f5;
+}
+
+.status-details {
+  margin-top: 2rem;
+}
+
+.complaint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.status-badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.status-badge.pending { background: #ffe08a; color: #946c00; }
+.status-badge.in-progress { background: #b5e4ff; color: #0069c2; }
+.status-badge.resolved { background: #c3e6cb; color: #155724; }
+.status-badge.rejected { background: #f5c6cb; color: #721c24; }
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  background: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.detail-item label {
+  display: block;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item span {
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.status-timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-step {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.timeline-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e0e3e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.timeline-step.active .timeline-icon {
+  background: #4dabf7;
+  color: white;
+}
+
+.timeline-step.current .timeline-icon {
+  box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.2);
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  flex-grow: 1;
+  padding-bottom: 2rem;
+  border-left: 2px solid #e0e3e6;
+  padding-left: 1.5rem;
+  margin-left: -16px;
+}
+
+.timeline-step:last-child .timeline-content {
+  border-left: none;
+}
+
+.status-update {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.update-date {
+  display: block;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.attachments-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f2f5;
+}
+
+.attachment-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  color: #4dabf7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.attachment-link:hover {
+  background: #e3f2fd;
+}
+
+@media (max-width: 768px) {
+  .track-status-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-step {
+    flex-direction: column;
+  }
+
+  .timeline-icon {
+    margin-bottom: 1rem;
+  }
+
+  .timeline-content {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}

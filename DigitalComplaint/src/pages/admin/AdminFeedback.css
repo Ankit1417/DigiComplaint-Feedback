@@ -1,0 +1,41 @@
+.admin-feedback {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .admin-feedback h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .admin-feedback table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-feedback th,
+  .admin-feedback td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-feedback th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .admin-feedback tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-feedback td {
+    color: #333;
+  }
+  

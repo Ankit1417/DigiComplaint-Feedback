@@ -1,0 +1,246 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portal-container {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  /* Hero Section */
+  .portal-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-title .highlight {
+    color: #ff8c00;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .hero-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .hero-illustration img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  /* Features Section */
+  .portal-features {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .feature-icon {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto 1rem;
+    position: relative;
+  }
+  
+  .feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Override for Real-time Tracking card */
+  .feature-card.tracking {
+    position: relative;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-card.tracking .feature-icon {
+    display: none;
+  }
+  
+  .feature-card.tracking::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/assets/tracking-system.svg') center/cover no-repeat;
+    z-index: 1;
+  }
+  
+  /* Overlay Text */
+  .feature-card.tracking h3,
+  .feature-card.tracking p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .feature-card.tracking h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card.tracking p {
+    font-size: 1rem;
+  }
+  
+  /* Campus Impact Section */
+  .campus-impact {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .impact-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-item {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077cc;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Gallery */
+  .campus-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    background: #fff;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .improvement-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #28a745;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Testimonial */
+  .testimonial blockquote {
+    padding: 1.5rem;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Live Feed */
+  .live-feed {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .live-feed h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .resolution-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .resolution-list li {
+    margin-bottom: 0.5rem;
+  }
+  
