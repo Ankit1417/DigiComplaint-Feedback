@@ -7,7 +7,7 @@ A modern and secure **MERN stack application** designed to streamline the proces
 ## 🚀 Features
 
 ### 🎓 Student Side
-- 📝 Submit complaints with auto-generated **5-digit unique ID**
+- 📝 Submit complaints with auto-generated **5-digit unique ID** 
 - 🔍 Track complaint status using the ID
 - 🗣️ Submit **anonymous feedback**
 - 💡 Simple and responsive user interface
